@@ -5,9 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Management</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #3498db, #2c3e50);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 28px;
+            font-weight: bold;
+            position: relative;
+        }
+
+        header img {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            height: 50px;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+            transform: scale(1.1);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 26px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .cta-buttons a {
+            text-decoration: none;
+            color: white;
+            background: #3498db;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .cta-buttons a:hover {
+            background: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .fun-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: #eaf6ff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .fun-section h3 {
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+
+        .fun-facts {
+            list-style: none;
+            padding: 0;
+        }
+
+        .fun-facts li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        footer {
+            text-align: center;
+            background: #2c3e50;
+            color: white;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    <header>Library Management System</header>
+    <header>
+        <img src="logo.png" alt="Library Logo">
+        Library Management System
+    </header>
     <nav>
         <a href="index.html">Home</a>
         <a href="add_book.html">Add Book</a>
@@ -17,7 +150,23 @@
     </nav>
     <div class="container">
         <h2>Welcome to the Library Management System</h2>
-        <p>Use the navigation bar to explore features like adding, viewing, or searching books.</p>
+        <p>Effortlessly manage your books with features like adding, viewing, and searching for books. Use the navigation bar to explore all the features of our system.</p>
+        <div class="cta-buttons">
+            <a href="add_book.html">Add a Book</a>
+            <a href="view_books.html">View Books</a>
+        </div>
+        <div class="fun-section">
+            <h3>Did You Know?</h3>
+            <ul class="fun-facts">
+                <li>The first libraries date back to 2600 BCE in ancient Mesopotamia.</li>
+                <li>The Library of Congress is the largest library in the world with over 170 million items.</li>
+                <li>There are over 2.6 billion library visits in the US each year!</li>
+                <li>Reading can reduce stress by up to 68%, according to research.</li>
+            </ul>
+        </div>
     </div>
+    <footer>
+        <p>&copy; 2025 Library Management System. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
