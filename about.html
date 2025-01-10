@@ -5,6 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .features {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .features h3 {
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .features ul li::before {
+            content: "\2713"; /* Checkmark symbol */
+            margin-right: 10px;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .team {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f4f4f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .team img {
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .team-member p {
+            margin: 0;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .cta button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cta button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
     <header>Library Management System</header>
@@ -18,6 +93,46 @@
     <div class="container">
         <h2>About This System</h2>
         <p>The Library Management System is a simple web-based application to manage books. Features include adding, viewing, and searching for books. Built using HTML, CSS, and JavaScript.</p>
+
+        <div class="features">
+            <h3>Key Features:</h3>
+            <ul>
+                <li>User-friendly interface for managing books</li>
+                <li>Real-time search functionality</li>
+                <li>Efficient book categorization and organization</li>
+                <li>Mobile and desktop responsive design</li>
+                <li>Lightweight and fast loading</li>
+            </ul>
+        </div>
+
+        <div class="team">
+            <h3>Meet the Team:</h3>
+            <div class="team-member">
+                <img src="team1.jpg" alt="Team Member 1" width="60" height="60">
+                <p><strong>John Doe</strong> - Lead Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="team2.jpg" alt="Team Member 2" width="60" height="60">
+                <p><strong>Jane Smith</strong> - UI/UX Designer</p>
+            </div>
+            <div class="team-member">
+                <img src="team3.jpg" alt="Team Member 3" width="60" height="60">
+                <p><strong>Sam Wilson</strong> - Backend Specialist</p>
+            </div>
+            <div class="team-member">
+                <img src="team4.jpg" alt="Team Member 4" width="60" height="60">
+                <p><strong>Emily Davis</strong> - Frontend Engineer</p>
+            </div>
+            <div class="team-member">
+                <img src="team5.jpg" alt="Team Member 5" width="60" height="60">
+                <p><strong>Michael Brown</strong> - QA Tester</p>
+            </div>
+        </div>
+
+        <div class="cta">
+            <h3>Ready to explore?</h3>
+            <button onclick="location.href='view_books.html'">View All Books</button>
+        </div>
     </div>
 </body>
 </html>
