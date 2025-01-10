@@ -5,6 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Book</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #3498db, #2c3e50);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+            transform: scale(1.1);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 26px;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+        }
+
+        label {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .results-section {
+            margin-top: 30px;
+        }
+
+        .results-section h3 {
+            font-size: 22px;
+            color: #2c3e50;
+        }
+
+        .results-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .results-section ul li {
+            padding: 10px;
+            margin: 10px 0;
+            background: #eaf6ff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 18px;
+        }
+
+        .popular-searches {
+            margin-top: 30px;
+        }
+
+        .popular-searches h3 {
+            font-size: 22px;
+            color: #3498db;
+        }
+
+        .popular-searches ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .popular-searches ul li {
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .popular-searches ul li:hover {
+            background: #2980b9;
+        }
+    </style>
 </head>
 <body>
     <header>Library Management System</header>
@@ -24,10 +167,21 @@
             </div>
             <button type="submit">Search</button>
         </form>
-        <h3>Results:</h3>
-        <ul>
-            <!-- Search results will be listed here -->
-        </ul>
+        <div class="results-section">
+            <h3>Results:</h3>
+            <ul id="results">
+                <li>No results found. Try searching for something else!</li>
+            </ul>
+        </div>
+        <div class="popular-searches">
+            <h3>Popular Searches</h3>
+            <ul>
+                <li>Harry Potter</li>
+                <li>The Hobbit</li>
+                <li>Pride and Prejudice</li>
+                <li>The Great Gatsby</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
